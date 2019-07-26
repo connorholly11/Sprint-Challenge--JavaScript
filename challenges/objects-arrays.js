@@ -15,7 +15,7 @@ const tyrannosaurus = {
   "time": "Late Cretaceous",
 
   scare: function(){
-      console.log("RAWERSRARARWERSARARARRRR!");
+      return "RAWERSRARARWERSARARARRRR!";
   }
 }
 
@@ -98,14 +98,12 @@ console.log(contactInfo);
 let uni = [];
 
   uni = graduates.filter(function(arrayItem){
-      return arrayItem.university === "Uni";
+      return arrayItem.university.match(/Uni/);
   });
 
   numberUni = uni.length;
       
 console.log(numberUni);
-
-//DOESN'T WORK
 
 // ==== ADVANCED Array Methods ====
 
@@ -130,7 +128,7 @@ let animalNames = [];
 
   animalNames = zooAnimals.forEach(function(arrayItem){
       return `${arrayItem.animal_name}, ${arrayItem.scientific_name}`
-  });
+  })
 
 console.log(animalNames);
 

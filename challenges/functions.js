@@ -8,7 +8,7 @@
 */
 
 function consume(x, y, cb){
-  return cb(x + y)
+  return cb(x, y)
 }
   
 
@@ -19,30 +19,30 @@ function consume(x, y, cb){
   * Create a function named greeting that accepts a first and last name and returns "Hello first-name last-name, nice to meet you!"
 */
 
-// consume(x, y, function(add)){
-//   console.log(add(x + y));
-// }
-
-function multiply(x, y, cb){
-  console.log(cb(x * y));
+function add(x, y){
+  console.log(x + y);
 }
 
-// function greeting(first_name, last_name, cb){
-//   console.log(`Hello ${first_name} ${last_name}, nice to meet you!`)
-// }
+function multiply(x, y){
+  console.log(x * y);
+}
+
+function greeting(first_name, last_name){
+  console.log(`Hello ${first_name} ${last_name}, nice to meet you!`)
+}
 
 /* Step 3: Check your work by un-commenting the following calls to consume(): */
 
-// consume(2,2,add); // 4
+consume(2,2,add); // 4
 consume(10,16,multiply); // 160
-// consume("Mary","Poppins", greeting); // Hello Mary Poppins, nice to meet you!
+consume("Mary","Poppins", greeting); // Hello Mary Poppins, nice to meet you!
 
 
 // ==== Closures ==== 
 
 // Explain in your own words why `nestedfunction()` can access the variable `internal`.
 
-// Explanation: Because closures allow access to the outer functions scope. That means nestedFunction would have access to what is inside myFunction, but myFunction wouldn't have access to a "const" in the nestedFunction.
+// Explanation: Because closures allow access to the outer functions scope. That means nestedFunction would have access to what is inside myFunction, but myFunction wouldn't have access to a "const" in the nestedFunction. It's the same reason that myFunction has access to const external.
 
 
 
