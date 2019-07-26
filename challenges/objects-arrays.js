@@ -124,13 +124,22 @@ zooAnimals = [{"animal_name":"Jackal, asiatic","population":5,"scientific_name":
 /* Request 1: .forEach()
 The zoo wants to display both the scientific name and the animal name in front of the habitats.  Return an array with only the animal and scientific names in it.  The individual values in the array should look like this "Name: Jackal, asiatic, Scientific: Canis aureus."
 */
+// let animalNames = [];
+
+//   animalNames = zooAnimals.forEach(function(arrayItem){
+//       animalNames.push (`Name: ${arrayItem.animal_name}, Scientific Name: ${arrayItem.scientific_name}`)
+//   });
+
+// console.log(animalNames);
+
 let animalNames = [];
 
-  animalNames = zooAnimals.forEach(function(arrayItem){
-      return `${arrayItem.animal_name}, ${arrayItem.scientific_name}`
-  })
+  zooAnimals.forEach(function(arrayItem){
+      animalNames.push (`Name: ${arrayItem.animal_name}, Scientific Name: ${arrayItem.scientific_name}`)
+  });
 
 console.log(animalNames);
+
 
 //DOESN'T WORK
 

@@ -1,7 +1,7 @@
 # Sprint Challenge: JavaScript Fundamentals
 
 
-1. forEach is basically doing a for loop and returning whatever you say to return once the loop is done while .map creates a new array based on the function you create. They mostly can return the same things, but the way they go about them are different. 
+1. forEach is basically doing a for loop and returning whatever you say to return once the loop is done while .map creates a new array based on the criteria you make. forEach is a for loop while map is closer to an if statement. They mostly can return the same things, but the way they go about them are different. 
 2. A method technically is a function. It’s just the function of a specific object or class. A function is a more general statement that can be used in the global scope as well. 
 3. Closures are what defines the scope for everything in your code. Closures allow access to the outer functions scope.
 4. global scope, explicit binding, implicit binding, new binding 
