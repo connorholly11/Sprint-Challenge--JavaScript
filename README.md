@@ -1,5 +1,13 @@
 # Sprint Challenge: JavaScript Fundamentals
 
+
+1. forEach is basically doing a for loop and returning whatever you say to return once the loop is done while .map creates a new array based on the function you create. They mostly can return the same things, but the way they go about them are different. 
+2. A method technically is a function. It’s just the function of a specific object or class. A function is a more general statement that can be used in the global scope as well. 
+3. Closures are what defines the scope for everything in your code. Closures allow access to the outer functions scope.
+4. global scope, explicit binding, implicit binding, new binding 
+5. super is the keyword that tells your constructor method that you want to inherit another class. The extend keyword is telling the super() what class it should inherit. 
+
+
 This challenge allows you to practice the concepts and techniques learned over the past week and apply them in a survey of problems. This Sprint explored JavaScript Fundamentals. During this Sprint, you studied variables, functions, object literals, arrays, this keyword, prototypes, and class syntax. In your challenge this week, you will demonstrate proficiency by completing a survey of JavaScript problems.
 
 ## Instructions
